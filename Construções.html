@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construções de Seto World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fundo-pagina.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <h1>Seto World !!</h1>
+        <nav>
+            <a href="Index.html">Início</a>
+            <a href="Entrar.html">Entrar</a>
+            <a href="Monstros.html">Monstros</a>
+            <a href="Cidades.html">Cidades</a>
+            <a href="Plantas.html">Plantas</a>
+            <a href="Itens.html">Itens</a>
+            <a href="Npc's.html">Npc's</a>
+            <a href="Mapas.html">Mapas</a>
+            <a href="Construções.html">Construções</a>
+            <a href="Arenas.html">Arenas</a>
+            <a href="Sobre.html">Sobre</a>
+        </nav>
+    </div>
+
+    <section class="card-container">
+        <!-- CONSTRUÇÃO -->
+        <div class="card" data-tipo="construcao" data-nome="Taberna"
+            data-img="/Galeria/Construções/Taberna.jpg" data-finalidade="Compra de Bebidas e Materiais, Encontros de Guildas"
+            data-material="Madeira Velha" data-status="Nenhum">
+            <img src="/Galeria/Construções/Taberna.jpg" alt="Taberna">
+            <h3>Taberna</h3>
+            <p>Casa de Vendas de Materiais e Bebidas.</p>
+        </div>
+
+        <div class="card" data-tipo="construcao" data-nome="Casa da Bruxa"
+            data-img="/Galeria/Construções/Casa-Bruxa.jpg" data-finalidade="Pesquisa mágica"
+            data-material="Madeira Encantada" data-status="Encantamento Ativo">
+            <img src="/Galeria/Construções/Casa-Bruxa.jpg" alt="Casa da Bruxa">
+            <h3>Casa da Bruxa</h3>
+            <p>Casa de Vendas de Material Magico.</p>
+        </div>
+
+        <div class="card" data-tipo="construcao" data-nome="Castelo do Vampiro"
+            data-img="/Galeria/Construções/Castelo-Vampiro.jpg" data-finalidade="Caçadas"
+            data-material="Pedras Antigas" data-status="Encantamento contra Luz, Energia">
+            <img src="/Galeria/Construções/Castelo-Vampiro.jpg" alt="Castelo do Vampiro">
+            <h3>Castelo do Vampiro</h3>
+            <p>Local de Caça.</p>
+        </div>
+
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close">&times;</span>
+            <!-- conteúdo gerado via JS -->
+        </div>
+    </div>
+
+
+
+</body>
+<script src="Script.js"></script>
+
+</html>

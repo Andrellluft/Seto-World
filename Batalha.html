@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Batalhas - Seto World</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    select,
+    button {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    #resultado {
+      margin-top: 30px;
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffff;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Batalha - Seto World</h1>
+
+  <h3>Selecione o Monstro</h3>
+  <select id="monstro">
+    <option value="basilisk">Basilisk (Atk: 80, Def: 80)</option>
+  </select>
+
+  <h3>Selecione um Item</h3>
+  <select id="item">
+    <option value="nenhum">Nenhum</option>
+    <option value="pocao_mana">Poção de Mana (Cura: +20)</option>
+  </select>
+
+  <h3>Selecione a Arena</h3>
+  <select id="arena">
+    <option value="cristal">Caverna de Cristal (Clima: Frio e Úmido)</option>
+  </select>
+
+  <br><br>
+  <button onclick="iniciarBatalha()">Iniciar Batalha</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function iniciarBatalha() {
+      // Definições fixas (poderia vir de JSON/PHP no futuro)
+      const jogador = {
+        ataque: 100,
+        defesa: 70,
+        hp: 100,
+        habilidades: ["Resistência Mágica"]
+      };
+
+      const monstroSelecionado = document.getElementById("monstro").value;
+      const itemSelecionado = document.getElementById("item").value;
+      const arenaSelecionada = document.getElementById("arena").value;
+
+      let monstro = {};
+      let item = {};
+      let arena = {};
+
+      // MONSTRO
+      if (monstroSelecionado === "basilisk") {
+        monstro = {
+          nome: "Basilisk",
+          ataque: 80,
+          defesa: 80,
+          habilidades: ["Rajada de Penas", "Investida Aérea"]
+        };
+      }
+
+      // ITEM
+      if (itemSelecionado === "pocao_mana") {
+        item = {
+          nome: "Poção de Mana",
+          efeito: "cura",
+          valor: 20
+        };
+      } else {
+        item = null;
+      }
+
+      // ARENA
+      if (arenaSelecionada === "cristal") {
+        arena = {
+          nome: "Caverna de Cristal",
+          clima: "Frio e Úmido"
+        };
+      }
+
+      // APLICA EFEITOS DE ARENA
+      if (arena.clima === "Frio e Úmido") {
+        if (monstro.habilidades.includes("Rajada de Penas")) {
+          monstro.ataque += 10;
+        }
+        if (jogador.habilidades.includes("Resistência Mágica")) {
+          jogador.defesa += 10;
+        }
+      }
+
+      // APLICA EFEITO DO ITEM
+      if (item && item.efeito === "cura") {
+        jogador.hp += item.valor;
+      }
+
+      // CÁLCULO SIMPLES DE DANO
+      const danoCausado = Math.max(0, jogador.ataque - monstro.defesa);
+      const danoRecebido = Math.max(0, monstro.ataque - jogador.defesa);
+      const vencedor = danoCausado >= danoRecebido ? "Você venceu!" : "O monstro venceu!";
+
+      document.getElementById("resultado").innerHTML = `
+        <h2>Resultado da Batalha</h2>
+        <p><strong>Monstro:</strong> ${monstro.nome}</p>
+        <p><strong>Arena:</strong> ${arena.nome} (${arena.clima})</p>
+        <p><strong>Item usado:</strong> ${item ? item.nome : "Nenhum"}</p>
+        <p><strong>Seu HP:</strong> ${jogador.hp}</p>
+        <p><strong>Dano causado ao monstro:</strong> ${danoCausado}</p>
+        <p><strong>Dano recebido:</strong> ${danoRecebido}</p>
+        <h3>${vencedor}</h3>
+      `;
+    }
+  </script>
+</body>
+
+</html>

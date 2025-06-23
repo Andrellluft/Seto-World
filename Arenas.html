@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arenas de Seto World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fundo-pagina.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <h1>Seto World !!</h1>
+        <nav>
+            <a href="Index.html">Início</a>
+            <a href="Entrar.html">Entrar</a>
+            <a href="Monstros.html">Monstros</a>
+            <a href="Cidades.html">Cidades</a>
+            <a href="Plantas.html">Plantas</a>
+            <a href="Itens.html">Itens</a>
+            <a href="Npc's.html">Npc's</a>
+            <a href="Mapas.html">Mapas</a>
+            <a href="Construções.html">Construções</a>
+            <a href="Arenas.html">Arenas</a>
+            <a href="Sobre.html">Sobre</a>
+        </nav>
+    </div>
+
+    <section class="card-container">
+
+        <div class="card" data-tipo="arena" data-nome="Caverna de Cristal" data-localizacao="Montes Nevados"
+            data-clima="Frio e Úmido" data-descricao="Arena para combates de gladiadores."
+            data-img="/Galeria/Arenas/Caverna-Cristal.jpg">
+            <img src="/Galeria/Arenas/Caverna-Cristal.jpg" alt="Caverna de Cristal">
+            <h3>Caverna de Cristal</h3>
+            <p>Utilizada para Combates PVP'S.</p>
+        </div>
+
+        <div class="card" data-tipo="arena" data-nome="Arena de Gelo" data-localizacao="Montes Nevados"
+            data-clima="Congelante" data-descricao="Arena para combates de Bosses."
+            data-img="/Galeria/Arenas/Arena-Gelo.jpg">
+            <img src="/Galeria/Arenas/Arena-Gelo.jpg" alt="Arena de Gelo">
+            <h3>Arena de Gelo</h3>
+            <p>Utilizada para Combates PVP'S.</p>
+        </div>
+
+
+
+    </section>
+
+    <!-- Modal reutilizado -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close">&times;</span>
+            <!-- Conteúdo gerado dinamicamente -->
+        </div>
+    </div>
+
+</body>
+<script src="Script.js"></script>
+
+</html>

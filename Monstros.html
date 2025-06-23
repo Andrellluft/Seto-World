@@ -1,0 +1,72 @@
+<?php include 'proteger.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestyario de Seto World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fundo-pagina.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <h1>Seto World !!</h1>
+        <nav>
+            <a href="Index.html">Início</a>
+            <a href="Entrar.html">Entrar</a>
+            <a href="Monstros.html">Monstros</a>
+            <a href="Cidades.html">Cidades</a>
+            <a href="Plantas.html">Plantas</a>
+            <a href="Itens.html">Itens</a>
+            <a href="Npc's.html">Npc's</a>
+            <a href="Mapas.html">Mapas</a>
+            <a href="Construções.html">Construções</a>
+            <a href="Arenas.html">Arenas</a>
+            <a href="Sobre.html">Sobre</a>
+        </nav>
+    </div>
+
+    <section class="card-container">
+        <div class="card" data-tipo="monstro" data-nome="Basilisk" data-ataque="120" data-defesa="80"
+            data-poder="Vento" data-habilidades="Rajada de Penas, Investida Aérea"
+            data-img="/Galeria/Monstros/Basilisk.jpg">
+            <img src="/Galeria/Monstros/Basilisk.jpg" alt="Basilisk">
+            <h3>Basilisk</h3> <h5>Monstro Tipo: Unico</h5>
+            <p>Dragão voador que domina os céus das Montanhas e vales.</p>
+        </div>
+
+         <div class="card" data-tipo="monstro" data-nome="Gnoll" data-ataque="110" data-defesa="60"
+            data-poder="Normal" data-habilidades="Cortes de Machado, Machadada"
+            data-img="/Galeria/Monstros/Gnoll.jpg">
+            <img src="/Galeria/Monstros/Gnoll.jpg" alt="Gnoll">
+            <h3>Gnoll</h3> <h5>Monstro Tipo: Invocação</h5>
+            <p>Besta Invocação , ao invocar fica sobre controle de seu mestre.</p>
+        </div>
+
+         <div class="card" data-tipo="monstro" data-nome="Gigante de Gelo" data-ataque="300" data-defesa="150"
+            data-poder="Gelo" data-habilidades="Socos de Gelo, Bolas de Neve, Sopro Congelante"
+            data-img="/Galeria/Monstros/Gigante-Gelo.jpg">
+            <img src="/Galeria/Monstros/Gigante-Gelo.jpg" alt="Gigante de Gelo">
+            <h3>Gigante de Gelo</h3> <h5>Monstro Tipo: Boss</h5>
+            <p>Gigante de Gelo que Governa os Montes Nevados.</p>
+        </div>
+
+
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close">&times;</span>
+            <!-- Conteúdo gerado dinamicamente -->
+        </div>
+    </div>
+
+</body>
+<script src="Script.js"></script>
+
+</html>

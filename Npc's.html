@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moradores de Seto World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fundo-pagina.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <h1>Seto World !!</h1>
+        <nav>
+            <a href="Index.html">Início</a>
+            <a href="Entrar.html">Entrar</a>
+            <a href="Monstros.html">Monstros</a>
+            <a href="Cidades.html">Cidades</a>
+            <a href="Plantas.html">Plantas</a>
+            <a href="Itens.html">Itens</a>
+            <a href="Npc's.html">Npc's</a>
+            <a href="Mapas.html">Mapas</a>
+            <a href="Construções.html">Construções</a>
+            <a href="Arenas.html">Arenas</a>
+            <a href="Sobre.html">Sobre</a>
+        </nav>
+    </div>
+
+    <section class="card-container">
+
+        <!-- NPC -->
+        <div class="card" data-tipo="npc" data-nome="Necro Magista" data-img="/Galeria/Npc's/Necro-Magista.jpg"
+            data-local="Ruinas Antiga Eterniun" data-produtos="Magias, Itens Magicos"
+            data-especialidade="Magias Negras">
+            <img src="/Galeria/Npc's/Necro-Magista.jpg" alt="Mestre Iroh">
+            <h3>Necro Magista</h3>
+            <p>Vendedor e Professor de Itens e Magias Negras.</p>
+        </div>
+
+        <div class="card" data-tipo="npc" data-nome="Mestre Iroh" data-img="/Galeria/Npc's/Mestre Iroh.jpg"
+            data-local="Vila Rocha" data-produtos="Poções, Runas" data-especialidade="Magia e encantamento">
+            <img src="/Galeria/Npc's/Mestre Iroh.jpg" alt="Mestre Iroh">
+            <h3>Mestre Iroh</h3>
+            <p>Vendedor de itens arcanos.</p>
+        </div>
+
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close">&times;</span>
+            <!-- conteúdo gerado via JS -->
+        </div>
+    </div>
+
+
+</body>
+<script src="Script.js"></script>
+
+</html>

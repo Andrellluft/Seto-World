@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanica de Seto World</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fundo-pagina.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <h1>Seto World !!</h1>
+        <nav>
+            <a href="Index.html">Início</a>
+            <a href="Entrar.html">Entrar</a>
+            <a href="Monstros.html">Monstros</a>
+            <a href="Cidades.html">Cidades</a>
+            <a href="Plantas.html">Plantas</a>
+            <a href="Itens.html">Itens</a>
+            <a href="Npc's.html">Npc's</a>
+            <a href="Mapas.html">Mapas</a>
+            <a href="Construções.html">Construções</a>
+            <a href="Arenas.html">Arenas</a>
+            <a href="Sobre.html">Sobre</a>
+        </nav>
+    </div>
+
+    <!-- criar novo Modal para plantas  -->
+
+    <section class="card-container">
+
+        <div class="card" data-tipo="planta" data-nome="Cogumelos de luz" data-uso="Curativo e calmante"
+            data-raridade="Rara" data-local="Florestas Escuras" data-habilidades="Regeneração, Antiveneno"
+            data-img="/Galeria/Plantas/Cogumelos de luz.jpg">
+            <img src="/Galeria/Plantas/Cogumelos de luz.jpg" alt="Cogumelos de luz">
+            <h3>Cogumelos de luz</h3>
+            <p>Um Cogumelo de luz que floresce à noite e emite um leve brilho azulado.</p>
+        </div>
+
+        <div class="card" data-tipo="planta" data-nome="Arvore do Cristal Rosa" data-uso="Regenerador"
+            data-raridade="Ultra Rara" data-local="Florestas Antigas" data-habilidades="Regeneração, Antiveneno"
+            data-img="/Galeria/Plantas/Arvore-Cristal-Rosa.jpg">
+            <img src="/Galeria/Plantas/Arvore-Cristal-Rosa.jpg" alt="Arvore do Cristal Rosa">
+            <h3>Arvore do Cristal Rosa</h3>
+            <p>Uma Arvore do Cristal Rosa Super rara e de um valor inestimavel.</p>
+        </div>
+
+    </section>
+
+    <!-- Modal reutilizado -->
+
+    <div id="modal" class="modal">
+        <div class="modal-content" id="modal-content">
+            <span class="close">&times;</span>
+            <!-- Conteúdo gerado dinamicamente -->
+        </div>
+    </div>
+
+
+</body>
+<script src="Script.js"></script>
+
+</html>

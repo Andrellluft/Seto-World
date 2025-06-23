@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem Vindo a Seto World</title>
+    <link rel="stylesheet" href="Entrar.css">
+    <link rel="icon" href="fundo-pagina.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body class="cabecalho">
+
+    <div class="cabecalho">
+
+        <nav class="cabecalho">
+            <h1>Bem Vindo ao Mundo !!</h1>
+            <a href="Index.html">Voltar</a>
+            <a href="Entrar.html">Entrar</a>
+        </nav>
+    </div>
+
+    <div class="container" id="form-container" action="login.php" method="post">
+        <h2 id="form-title">Conectar-se ao Mundo</h2>
+        <input type="text" id="username" placeholder="Usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button onclick="handleSubmit()">Conectar</button>
+        <div class="toggle" onclick="toggleForm()">Ainda não tem conexão? Conecte-se</div>
+    </div>
+
+
+</body>
+<script src="Script.js"></script>
+
+</html>
